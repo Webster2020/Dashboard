@@ -1,0 +1,31 @@
+.row-aside {
+  position: relative;
+  padding: 13px 0 13px 20px;
+  height: 50px;
+  width: 100%;
+  border-left: 3px solid $aside-background-color;
+  color: $section-background-color;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: $section-background-color;
+    opacity: 0;
+  }
+  &:hover {
+    border-left: 3px solid $brand-main-color;
+    &::after {
+      opacity: 0.1;   
+    }
+  }
+}
+
+.logo {
+  margin-left: 15px;
+  font-size: 28px;
+  font-family: $logo-font;
+  line-height: 0.8;
+}

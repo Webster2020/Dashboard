@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: $border-rad-sm;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: $brand-font;
+  font-size: $paragraph-font-size;
+  font-weight: 700;
+  text-align: center;
+  transition: $transition-fast;
+
+  &:hover {
+    opacity: 0.8;
+    transition: $transition-fast;
+  }
+}
+
+.btn-main {
+  background-color: $brand-main-color;
+  color: $main-background-color;
+
+  &:hover {
+    background-color: $main-background-color;
+    color: $brand-main-color;
+  }
+}
+
+.btn-aside {
+  background-color: $aside-background-color;
+  color: $aside-font-color;
+
+  &:hover {  
+    background-color: $aside-font-color;
+    color: $aside-background-color;
+  }
+}
