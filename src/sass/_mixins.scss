@@ -18,6 +18,14 @@ h3 {
   margin: 10px 0;
 }
 
+h4 {
+  font-size: $aside-menu-font-size;
+  font-family: $brand-font;
+  color: $aside-font-color;
+  font-weight: 500;
+}
+
+/* FLEX COLUMNS */
 .col-1 {
   flex: 1;
 }
@@ -26,17 +34,23 @@ h3 {
   flex: 4;
 }
 
+/* TEXT ALIGN */
 .txt-center {
   text-align: center;
 }
 
+.txt-700 {
+  font-weight: 700;
+}
+
 /* ICONS */
 .i-big {
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .i-md {
   font-size: 20px;
+  color: $aside-font-color;
 }
 
 .i-sm {

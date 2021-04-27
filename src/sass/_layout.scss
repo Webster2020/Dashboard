@@ -6,24 +6,25 @@
 
 nav {
   position: fixed;
-  height: 50px;
-  width: calc(100% - 200px);
+  height: $nav-height;
+  width: calc(100% - 250px);
   top: 0;
   right: 0;
-  background-color: lightblue;
+  background-color: $section-background-color;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
 aside {
   position: fixed;
   height: 100%;
-  width: 200px;
+  width: $aside-width;
   top: 0;
   left: 0;
   background-color: $aside-background-color;
 }
 
 main {
-  margin: 50px 0 0 200px;
-  height: calc(100% - 50px);
-  width: calc(100% - 200px);
+  margin: $nav-height 0 0 $aside-width;
+  height: calc(100% - $nav-height);
+  width: calc(100% - $aside-width);
 }

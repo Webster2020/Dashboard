@@ -1,0 +1,53 @@
+.nav-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.nav-element {
+  display: flex;
+  flex-wrap: nowrap;
+  border-left: 1px solid $main-font-color;
+  font-family: $brand-font;
+  font-size: $font-nav-size;
+  color: $main-font-color;
+}
+
+.nav-icon {
+  position: relative;
+  height: $nav-height;
+  width: 70px;
+  text-align: center;
+  line-height: 3;
+}
+
+.nav-money {
+  height: $nav-height;
+  text-align: center;
+  line-height: 3;
+}
+
+.nav-link {
+  margin-right: 25px;
+  height: $nav-height;
+  text-align: center;
+  line-height: 2.8;
+  a {
+    font-size: $font-nav-link-size;
+    color: $aside-background-color;
+    text-decoration: none;
+  }
+}
+
+.point-red {
+  &::after {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    top: 22px;
+    left: 36px;
+    border-radius: 50%;
+    background-color: $brand-main-color;
+  }
+}
