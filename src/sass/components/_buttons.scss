@@ -1,21 +1,54 @@
 .btn {
   display: inline-block;
-  margin: 5px;
-  padding: 12px;
-  height: 40px;
-  min-width: 40px;
-  border-radius: $border-rad-sm;
-  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: $b-shad-e-btn;
   font-family: $brand-font;
-  font-size: $paragraph-font-size;
   font-weight: 700;
   text-align: center;
   transition: $transition-fast;
-
   &:hover {
     opacity: 0.8;
     transition: $transition-fast;
   }
+}
+
+.btn-sm {
+  padding: 5px;
+  height: 22px;
+  min-width: 22px;
+  font-size: $smallest-font-size;
+  border-radius: $border-rad-sm;
+}
+
+.btn-md {
+  padding: 8px;
+  height: 30px;
+  min-width: 30px;
+  font-size: $smaller-font-size;
+  border-radius: $border-rad-sm;
+}
+
+.btn-big {
+  padding: 12px;
+  height: 40px;
+  min-width: 40px;
+  font-size: $paragraph-font-size;
+  border-radius: $border-rad-md;
+}
+
+.btn-lg {
+  padding: 13px;
+  height: 48px;
+  min-width: 48px;
+  font-size: $normal-font-size;
+  border-radius: $border-rad-md;
+}
+
+.btn-xl {
+  padding: 15px;
+  height: 60px;
+  min-width: 60px;
+  font-size: $big-font-size;
+  border-radius: $border-rad-lg;
 }
 
 .btn-main {
