@@ -1,5 +1,52 @@
-.diagram {
-  margin: 20px 0 10px 0;
-  width: 100%;
-  border: 1px solid purple;
+.img-wrapper {
+  display: inline-block;
+  border: 3px solid purple;
+  .img {
+    border: 3px solid darkslateblue;
+  }
+  .img-sizer {
+    height: 300px;
+    width: 200px;
+  }
 }
+
+.img-fill {
+  object-fit: fill;
+}
+
+.img-contain {
+  object-fit: contain;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.img-none {
+  object-fit: none;
+}
+
+.img-sc-d {
+  object-fit: scale-down;
+}
+
+.img-pos {
+  object-position: 0% 0%;
+}
+
+.img-bor-rad {
+  border-radius: 50%;
+}
+
+
+
+
+/*
+.fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+.none {object-fit: none;}
+
+object-position
+*/
