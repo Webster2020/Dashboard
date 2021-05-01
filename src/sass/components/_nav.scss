@@ -1,3 +1,14 @@
+nav {
+  position: fixed;
+  z-index: 99;
+  height: $nav-height;
+  width: calc(100% - 250px);
+  top: 0;
+  right: 0;
+  background-color: $section-background-color;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
 .nav-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -9,7 +20,7 @@
   flex-wrap: nowrap;
   border-left: 1px solid $main-font-color;
   font-family: $brand-font;
-  font-size: $font-nav-size;
+  font-size: $nav-font-size;
   color: $main-font-color;
 }
 
@@ -32,8 +43,9 @@
   height: $nav-height;
   text-align: center;
   line-height: 2.8;
+
   a {
-    font-size: $font-nav-link-size;
+    font-size: $nav-link-font-size;
     color: $aside-background-color;
     text-decoration: none;
   }

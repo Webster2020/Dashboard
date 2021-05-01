@@ -6,18 +6,24 @@
 
 /* Components */
 @import "components/buttons";
-@import "components/section-title";
-@import "components/section-main";
-@import "components/aside";
 @import "components/calendar";
-@import "components/links";
+@import "components/containers";
 @import "components/diagram";
+@import "components/grid";
+@import "components/icons";
+@import "components/links";
+@import "components/list";
+@import "components/logo";
+@import "components/main";
 @import "components/nav";
+@import "components/texts";
+@import "components/top-navOne";
 //@import "components/form_field";
 
 /* Sections */
 //@import "section/registration_form";
-@import "sections/section-wrapper";
+@import "sections/aside";
 
 /* Pages / Views */
-@import "pages/page-main";
+@import "pages/page-styleguide";
+@import "pages/page-general";

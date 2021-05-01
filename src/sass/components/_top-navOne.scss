@@ -1,0 +1,112 @@
+.navOne {
+  background-color: $main-background-color;
+  padding: 10px;
+  /* te dwie opcje zafixuja pasek na górze:
+  width: 100%;
+  position: fixed; */
+}
+
+.navOne-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: $brand-font;
+  color: $dark-font-color;
+}
+
+.navOne-navigation-bar {
+  display: flex;
+  flex-wrap: wrap; /*zawija pasek po zmniejszeniu okna*/
+  justify-content: space-between;
+
+  .navOne-navigation-bar-left {
+    i {
+      float: left;
+    }
+
+    p {
+      float: left;
+      margin: 0;
+      transition: $transition-mid;
+
+      &:hover {
+        color: $main-font-color;
+      }
+    }
+  }
+
+  .navOne-navigation-bar-right {
+    /*--menu I poziomu--*/
+    .navOne-menu-first {
+      margin: 0;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+        position: relative;
+        margin-right: 5px;
+
+        &:hover {
+          /*--menu II poziomu--*/
+          .navOne-menu-second {
+            display: block;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $dark-font-color;
+          transition: $transition-mid;
+
+          &:hover {
+            color: $main-font-color;
+          }
+        }
+        /*--menu II poziomu--*/
+        .navOne-menu-second {
+          display: none;
+          position: absolute;
+          left: -41px;
+          top: 20px;
+
+          li {
+            display: block;
+            margin: 8px 0;
+          }
+        }
+      } 
+    }
+  }
+}
+
+/* MEDIA */
+
+@media (max-width: 576px) {
+  body {
+    background-color: lightblue;
+  }
+  
+  .navOne-navigation-bar {
+    .navOne-navigation-bar-left {
+      font-size: 30px;
+    }
+
+    .navOne-navigation-bar-right {
+      font-size: 30px;
+
+      .navOne-menu-first {
+        li {
+          display: flex;
+          flex-direction: column;
+
+          .navOne-menu-second {
+            color: red;
+            font-size: 25px;
+            position: relative;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+ 
+}

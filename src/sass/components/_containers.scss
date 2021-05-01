@@ -1,0 +1,45 @@
+.container {
+  margin: 10px;
+  border: 5px solid darkmagenta;
+  box-shadow: $b-shad-e-one;
+}
+
+.section-wrapper {
+  margin: 10px;
+  border: 4px solid darkblue;
+  box-shadow: $b-shad-e-two;
+}
+
+.block-wrapper {
+  display: inline-block;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  border: 3px solid blue;
+}
+
+.block-wrapper-sizer {
+  height: 150px;
+  width: 300px;
+}
+
+/* ELEMENTS BELOWE GO TO CATALOGUE: SECTIONS*/
+.section-main {
+  margin: 0 0 2px;
+  padding: 20px 10px;
+  width: 100%;
+  background-color: $section-background-color;
+  text-align: center;
+}
+
+.section-main-margin {
+  padding: 20px 150px;
+}
+
+.section-title {
+  margin: 0 0 2px;
+  padding: 1px 15px;
+  width: 100%;
+  background-color: $section-background-color;
+  text-align: left;
+}

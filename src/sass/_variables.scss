@@ -1,10 +1,16 @@
 /* Colors */
-$main-background-color: #ede0d4;
+$black-color: black;
+$white-color: white;
+
+$dark-color: #03071e;
+$light-color: #ede0d4;
+
+$main-background-color: $light-color;
 $aside-background-color: #023047;
 $section-background-color: white;
 $main-font-color: #6b705c;
 $aside-font-color: #ede0d4;
-$dark-font-color: #03071e;
+$dark-font-color: $dark-color;
 $brand-main-color: #f77f00;
 
 /* Font sizes */
@@ -15,8 +21,18 @@ $paragraph-font-size: 16px;
 $aside-logo-font-size: 36px;
 $aside-menu-font-size: 20px;
 
-$font-nav-size: 25px;
-$font-nav-link-size: 19px;
+$nav-font-size: 25px;
+$nav-link-font-size: 19px;
+
+$bigest-font-size: 40px;
+$bigger-font-size: 35px;
+$big-font-size: 30px;
+
+$normal-font-size: 20px;
+
+$small-font-size: 18px;
+$smaller-font-size: 15px;
+$smallest-font-size: 12px;
 
 /* Layout sizes */
 $aside-width: 250px;
@@ -25,7 +41,10 @@ $nav-height: 70px;
 /* Fonts */
 $logo-font: 'Dancing Script', cursive;
 $brand-font: "Open Sans", Helvetica, Arial;
+$title-font: "Open Sans", Helvetica, Arial;
+$subtitle-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
+$button-font: "Open Sans", Helvetica, Arial;
 
 /* Transition */
 $transition-fast: 0.5s;
@@ -35,3 +54,10 @@ $transition-slow: 2s;
 /* Border radius */
 $border-rad-sm: 3px;
 $border-rad-md: 6px;
+$border-rad-lg: 10px;
+$border-rad-xl: 15px;
+
+/* BOX shadows */
+$b-shad-none: none;
+$b-shad-e-one: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+$b-shad-e-two: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);

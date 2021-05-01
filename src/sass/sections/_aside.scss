@@ -1,23 +1,10 @@
-.row-logo {
-  position: relative;
-  padding: 23px 0 13px 20px;
-  height: $nav-height;
-  width: 100%;
-  border-left: 3px solid $aside-background-color;
-  color: $section-background-color;
-}
-
-.logo {
-  margin-left: 15px;
-  font-size: $aside-logo-font-size;
-  font-family: $logo-font;
-  line-height: 0.8;
-}
-
-.logo-hover {
-  &:hover {
-    color: $brand-main-color;
-  }
+aside {
+  position: fixed;
+  height: 100%;
+  width: $aside-width;
+  top: 0;
+  left: 0;
+  background-color: $aside-background-color;
 }
 
 .row-aside {
@@ -27,6 +14,7 @@
   width: 100%;
   border-left: 3px solid $aside-background-color;
   color: $section-background-color;
+
   &::after {
     position: absolute;
     content: "";
@@ -37,11 +25,12 @@
     background-color: $section-background-color;
     opacity: 0;
   }
+
   &:hover {
     border-left: 3px solid $brand-main-color;
+
     &::after {
       opacity: 0.1;   
     }
   }
 }
-

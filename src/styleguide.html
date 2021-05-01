@@ -8,11 +8,48 @@
 
   <title>styleguide</title>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
 
 <body>
+
+  <section class="navOne">
+    <div class="navOne-container">
+      <div class="navOne-navigation-bar">
+        <div class="navOne-navigation-bar-left">
+          <i class="fas fa-play-circle"></i>
+          <p>WEBSTER</p>
+        </div>
+        <div class="navOne-navigation-bar-right">
+          <ul class="navOne-menu-first">
+            <li><a href="#">HOME</a>
+              <ul class="navOne-menu-second">
+                <li><a href="#">MAIN</a></li>
+                <li><a href="#">HOME</a></li>
+              </ul>
+            </li>
+            <li><a href="#">ABOUT</a>
+              <ul class="navOne-menu-second">
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">TRICKS</a></li>
+              </ul>
+            </li>
+            <li><a href="#">SHOP</a>
+              <ul class="navOne-menu-second">
+                <li><a href="#">BUY</a></li>
+                <li><a href="#">CHECK</a></li>
+              </ul>
+            </li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+          </ul>
+        </div>
+      </div>  
+    </div>
+  </section>
+
 
   <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
   <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -32,6 +69,161 @@
     <li>Lorem ipsum dolor <strong>sit amet</strong></li>
     <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
   </ol>
+
+  <br>
+  <hr>
+  <br>
+
+  <div class="container">CONTAINER</div>
+  <div class="section-wrapper">SECTION WRAPPER</div>
+  <div class="block-wrapper">BLOCK WRAPPER</div>
+  <div class="row">ROW</div>
+  <div class="col">COL</div>
+  <div class="logo">LOGO</div>
+  <div class="icon"><i class="fas fa-bars"></i></div>
+
+
+  <div class="container">
+    <div class="section-wrapper">SECTION WRAPPER</div>
+  </div>
+  
+  <div class="container">
+    <div class="section-wrapper">
+      <div class="row">ROW</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-wrapper">
+      <div class="row">
+        <div class="col">COL</div>
+        <div class="col m-tb-10">COL MAR. 10 0</div>
+        <div class="col m-lr-10">COL MAR. 0 10</div>
+        <div class="col m-tb-10 m-lr-10">COL MAR. 10</div>
+        <div class="col p-tb-10">COL PAD. 10 0</div>
+        <div class="col p-lr-10">COL PAD. 0 10</div>
+        <div class="col p-tb-10 p-lr-10">COL PAD. 10</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-wrapper">
+      <div class="row">
+        <div class="col">COL</div>
+        <div class="col">COL</div>
+        <div class="col">
+          <div class="block-wrapper">BLOCK WRAPPER</div>
+          <div class="block-wrapper">BLOCK WRAPPER NO 2</div>
+        </div>
+        <div class="block-wrapper">BLOCK WRAPPER ONE MORE TIME</div>
+        <div class="block-wrapper">BLOCK WRAPPER - LAST ONE</div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="row">
+    <div class="col col-left col-sm-6 col-md-6 col-lg-6 col-xl-6">COL-6 LEFT</div>
+    <div class="col col-right col-sm-6 col-md-6 col-lg-6 col-xl-6">COL-6 RIGHT</div>
+  </div>
+
+  <div class="row">
+    <div class="col col-cen col-sm-6 col-md-6 col-lg-6 col-xl-6">COL-6 CENTER</div>
+    <div class="col col-cen col-sm-6 col-md-6 col-lg-6 col-xl-6">COL-6 CENTER</div>
+  </div>
+
+  <div class="row">
+    <div class="col col-cen col-sm-4 col-md-4 col-lg-4 col-xl-4">COL-4 CENTER</div>
+    <div class="col col-cen col-sm-4 col-md-4 col-lg-4 col-xl-4">COL-4 CENTER</div>
+    <div class="col col-cen col-sm-4 col-md-4 col-lg-4 col-xl-4">COL-4 CENTER</div>
+  </div>
+
+  <div class="row">
+    <div class="col col-left col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="logo">
+        <h2>COL-6 LEFT</h2>
+      </div>
+    </div>
+    <div class="col col-cen col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="logo">
+        <h2>COL-6 CENTER</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="block-wrapper p-tb-10 p-lr-10">
+      <div class="row">
+        <div class="col col-xl-9 col-lg-9 col-md-9 col-sm-9">
+          <div class="logo">
+            <h2>LOGO</h2>
+          </div>
+        </div>
+        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="logo">
+            <div class="icon">
+              <h2><i class="fas fa-bars"></i></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-wrapper p-tb-10 p-lr-10">
+      <div class="row">
+        <div class="col col-xl-10 col-lg-10 col-md-10 col-sm-10">
+          <div class="logo">
+            <h2 class="logo-font logo-hover">LOGO</h2>
+          </div>
+        </div>
+        <div class="col col-xl-2 col-lg-2 col-md-2 col-sm-2">
+          <div class="logo">
+            <div class="icon">
+              <h2 class="logo-font logo-hover"><i class="fas fa-bars"></i></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-wrapper p-tb-10 p-lr-10">
+      <div class="row">
+        <div class="col col-xl-9 col-lg-9 col-md-9 col-sm-9">
+          <div class="logo">
+            <h2 class="logo-font logo-hover">LOGO</h2>
+          </div>
+        </div>
+        <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-3">
+          <div class="logo p-lr-5">
+            <div class="icon">
+              <h2 class="logo-font logo-hover"><i class="fas fa-bars"></i></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cen block-wrapper-sizer">
+      <div class="row m-tb-auto">
+        <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-8">
+          <div class="logo">
+            <h2 class="logo-font logo-hover">LOGO</h2>
+          </div>
+        </div>
+        <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-4">
+          <div class="logo p-lr-5">
+            <div class="icon">
+              <h2 class="logo-font logo-hover"><i class="fas fa-bars"></i></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 

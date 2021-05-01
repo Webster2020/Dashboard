@@ -1,0 +1,62 @@
+h1 {
+  font-size: $bigger-font-size;
+  font-family: $brand-font;
+  color: $main-font-color;
+  font-weight: 500;
+  background: red;
+  margin: 0;
+}
+
+h2 {
+  font-size: $big-font-size;
+  font-family: $title-font;
+  color: $main-font-color;
+  font-weight: 500;
+  background: orangered;
+  margin: 0;
+}
+
+h3 {
+  font-size: $title-font-size;
+  font-family: $title-font;
+  color: $main-font-color;
+  font-weight: 500;
+  background: orange;
+  margin: 0;
+}
+
+h4 {
+  font-size: $aside-menu-font-size;
+  font-family: $brand-font;
+  color: $main-font-color;
+  font-weight: 500;
+  background: yellow;
+  margin: 0;
+}
+
+h5 {
+  font-size: $subtitle-font-size;
+  font-family: $subtitle-font;
+  color: $main-font-color;
+  font-weight: 500;
+  background: greenyellow;
+  margin: 0;
+}
+
+h6 {
+  font-size: $small-font-size;
+  font-family: $brand-font;
+  color: $main-font-color;
+  font-weight: 500;
+  background: yellowgreen;
+  margin: 0;
+}
+
+p {
+  font-size: $paragraph-font-size;
+  font-family: $paragraph-font;
+  color: $main-font-color;
+  background: green;
+  margin: 0;
+}
+

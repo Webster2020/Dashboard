@@ -1,6 +1,11 @@
-.page-main {
+.page-general {
+  display: none;
   padding: 5px 0;
   height: 100%;
   width: 100%;
   background-color: $main-background-color;
+}
+
+.page-general-visible {
+  display: block;
 }

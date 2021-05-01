@@ -1,38 +1,4 @@
-h1 {
-  display: block;
-  font-size: $title-font-size;
-  font-family: $brand-font;
-  color: $main-font-color;
-  font-weight: 500;
-  border: 1px solid red;
-  margin: 10px 0;
-}
 
-h3 {
-  display: block;
-  font-size: $subtitle-font-size;
-  font-family: $brand-font;
-  color: $main-font-color;
-  font-weight: 700;
-  border: 1px solid red;
-  margin: 10px 0;
-}
-
-h4 {
-  font-size: $aside-menu-font-size;
-  font-family: $brand-font;
-  color: $aside-font-color;
-  font-weight: 500;
-}
-
-/* FLEX COLUMNS */
-.col-1 {
-  flex: 1;
-}
-
-.col-4 {
-  flex: 4;
-}
 
 /* TEXT ALIGN */
 .txt-center {
@@ -43,16 +9,3 @@ h4 {
   font-weight: 700;
 }
 
-/* ICONS */
-.i-big {
-  font-size: 30px;
-}
-
-.i-md {
-  font-size: 20px;
-  color: $aside-font-color;
-}
-
-.i-sm {
-  font-size: 16px;
-}
