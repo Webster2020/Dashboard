@@ -3,3 +3,23 @@ main {
   height: calc(100% - $nav-height);
   width: calc(100% - $aside-width);
 }
+
+.section-main {
+  margin: 0 0 2px;
+  padding: 20px 10px;
+  width: 100%;
+  background-color: $section-background-color;
+  text-align: center;
+}
+
+.section-main-margin {
+  padding: 20px 150px;
+}
+
+.section-title {
+  margin: 0 0 2px;
+  padding: 1px 15px;
+  width: 100%;
+  background-color: $section-background-color;
+  text-align: left;
+}

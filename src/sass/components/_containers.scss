@@ -23,23 +23,93 @@
   width: 300px;
 }
 
-/* ELEMENTS BELOWE GO TO CATALOGUE: SECTIONS*/
-.section-main {
-  margin: 0 0 2px;
-  padding: 20px 10px;
-  width: 100%;
-  background-color: $section-background-color;
-  text-align: center;
+.relative-wrapper {
+  position: relative;
+  overflow: hidden;
+  border: 3px dotted orangered;
+  .absolute-wrapper {
+    position: absolute;
+    background-color: lightgreen;
+    border: 2px solid yellow;
+    opacity: 0.8;
+  }
+  .abs-lt {
+    top: 0;
+    left: 0;
+  }
+  .abs-rt {
+    top: 0;
+    right: 0;
+  }
+  .abs-lb {
+    bottom: 0;
+    left: 0;
+  }
+  .abs-rb {
+    bottom: 0;
+    right: 0;
+  }
+  .abs-ct {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .abs-cb {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .abs-lc {
+    bottom: 50%;
+    left: 0;
+    transform: translate(0, 50%);
+  }
+  .abs-rc {
+    bottom: 50%;
+    right: 0;
+    transform: translate(0, 50%);
+  }
+  .abs-cc {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
 }
 
-.section-main-margin {
-  padding: 20px 150px;
+/* SIZES */
+
+.hgh-full {
+  height: 100%;
 }
 
-.section-title {
-  margin: 0 0 2px;
-  padding: 1px 15px;
-  width: 100%;
-  background-color: $section-background-color;
-  text-align: left;
+.hgh-half {
+  height: 50%;
+}
+
+.hgh-scr-full {
+  height: 100vh;
+}
+
+.hgh-scr-half {
+  height: 50vh;
+}
+
+.hgh-50 {
+  height: 50px;
+}
+
+.hgh-100 {
+  height: 100px;
+}
+
+.hgh-200 {
+  height: 200px;
+}
+
+.hgh-300 {
+  height: 300px;
+}
+
+.hgh-400 {
+  height: 400px;
 }
