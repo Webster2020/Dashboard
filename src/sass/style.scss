@@ -1,5 +1,4 @@
 @import "variables";
-@import "mixins";
 
 @import "normalize";
 @import "layout";
@@ -14,7 +13,6 @@
 @import "components/links";
 @import "components/list";
 @import "components/logo";
-@import "components/nav";
 @import "components/texts";
 @import "components/top-navOne";
 //@import "components/form_field";
@@ -23,6 +21,7 @@
 //@import "section/registration_form";
 @import "sections/aside";
 @import "sections/main";
+@import "sections/navbar";
 
 /* Pages / Views */
 @import "pages/page-styleguide";

@@ -1,7 +1,15 @@
 .link {
+  display: inline-block;
+  line-height: 0.8;
   border: 2px solid peru;
   a {
     text-decoration: none;
     color: $brand-main-color;
   }
+}
+
+.link-font {
+  font-size: $normal-font-size;
+  font-family: $logo-font;
+  color: $main-font-color;
 }

@@ -1,12 +1,19 @@
-
-.ul-row {
+.list {
   display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  border: 3px solid darkgreen;
+}
+
+.list-col {
+  flex-direction: column;
+}
+
+.list-row {
   flex-direction: row;
-  border: 2px dotted darkturquoise;
 }
-/*
-li {
-  display: block;
-  border: 2px dashed darkslategrey;
+
+li { 
+  display: inline-block;
+  border: 1px solid lightgreen;
 }
-*/

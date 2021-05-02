@@ -1,6 +1,13 @@
 .bcg-img {
-  background-image: url(https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-position: center center;
+  background-size: cover;
 }
+
+.bcg-img-fixed {
+  background-attachment: fixed;
+}
+
 
 .img-wrapper {
   display: inline-block;
