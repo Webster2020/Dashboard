@@ -3,7 +3,7 @@ h1 {
   font-family: $brand-font;
   color: $main-font-color;
   font-weight: 500;
-  background: red;
+  //background: red;
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ h2 {
   font-family: $title-font;
   color: $main-font-color;
   font-weight: 500;
-  background: orangered;
+  //background: orangered;
   margin: 0;
 }
 
@@ -21,7 +21,7 @@ h3 {
   font-family: $title-font;
   color: $main-font-color;
   font-weight: 500;
-  background: orange;
+  //background: orange;
   margin: 0;
 }
 
@@ -30,7 +30,7 @@ h4 {
   font-family: $brand-font;
   color: $main-font-color;
   font-weight: 500;
-  background: yellow;
+  //background: yellow;
   margin: 0;
 }
 
@@ -39,7 +39,7 @@ h5 {
   font-family: $subtitle-font;
   color: $main-font-color;
   font-weight: 500;
-  background: greenyellow;
+  //background: greenyellow;
   margin: 0;
 }
 
@@ -48,7 +48,7 @@ h6 {
   font-family: $brand-font;
   color: $main-font-color;
   font-weight: 500;
-  background: yellowgreen;
+  //background: yellowgreen;
   margin: 0;
 }
 
@@ -56,7 +56,7 @@ p {
   font-size: $paragraph-font-size;
   font-family: $paragraph-font;
   color: $main-font-color;
-  background: green;
+  //background: green;
   margin: 0;
 }
 
@@ -73,49 +73,49 @@ p {
 }
 
 .f-aside-logo-font-size {
-  font-size: $aside-logo-font-size
+  font-size: $aside-logo-font-size;
 }
 
 .f-aside-menu-font-size {
-  font-size: $aside-menu-font-size
+  font-size: $aside-menu-font-size;
 }
 
 .f-nav-font-size {
-  font-size: $nav-font-size
+  font-size: $nav-font-size;
 }
 
 .f-nav-link-font-size {
-  font-size: $nav-link-font-size
+  font-size: $nav-link-font-size;
 }
 
 .f-biggest-font-size {
-  font-size: $biggest-font-size
+  font-size: $biggest-font-size;
 }
 
 .f-bigger-font-size {
-  font-size: $bigger-font-size
+  font-size: $bigger-font-size;
 }
 
 .f-big-font-size {
-  font-size: $big-font-size
+  font-size: $big-font-size;
 }
 
 .f-normal-up-font-size {
-  font-size: $normal-up-font-size
+  font-size: $normal-up-font-size;
 }
 
 .f-normal-font-size {
-  font-size: $normal-font-size
+  font-size: $normal-font-size;
 }
 
 .f-small-font-size {
-  font-size: $small-font-size
+  font-size: $small-font-size;
 }
 
 .f-smaller-font-size {
-  font-size: $smaller-font-size
+  font-size: $smaller-font-size;
 }
 
 .f-smallest-font-size {
-  font-size: $smallest-font-size
+  font-size: $smallest-font-size;
 }

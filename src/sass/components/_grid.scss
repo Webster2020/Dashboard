@@ -4,7 +4,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border: 3px solid dodgerblue;
+  //border: 3px solid dodgerblue;
+}
+
+.row-nowrap {
+  flex-wrap: nowrap !important;
 }
 
 .row-start {
@@ -36,7 +40,7 @@
 .col {
   display: block;
   height: 100%;
-  border: 3px solid cyan;
+  //border: 3px solid cyan;
 }
 
 .col-left {
