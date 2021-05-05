@@ -7,6 +7,15 @@
   }
 }
 
+.hov-scale-sm {
+  transition: $transition-fast;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: $transition-fast;
+  }
+}
+
 .hov-main-color {
   &:hover {
     color: $brand-main-color !important;

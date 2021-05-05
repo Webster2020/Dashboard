@@ -8,16 +8,11 @@
   background-attachment: fixed;
 }
 
-
 .img-wrapper {
   display: inline-block;
   height: fit-content;
   line-height: 0;
-  border: 3px solid purple;
-
-  .img {
-    border: 3px solid darkslateblue;
-  }
+  //border: 3px solid purple;
 
   .img-sizer {
     height: 300px;
@@ -140,7 +135,7 @@
 }
 
 .img-pos {
-  object-position: 0% 0%;
+  object-position: 0% 10%;
 }
 
 .img-bor-rad {

@@ -1,0 +1,48 @@
+.point-green {
+  position: relative !important;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    background-color: $green-color;
+  }
+}
+
+.point-red {
+  position: relative !important;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    top: 22px;
+    left: 36px;
+    border-radius: 50%;
+    background-color: $red-color;
+  }
+}
+
+.point-brand {
+  position: relative !important;
+  &::after {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    top: 0px;
+    left: 16px;
+    border-radius: 50%;
+    background-color: $brand-main-color;
+  }
+  &:hover {
+    &::after {
+      height: 13px;
+      width: 13px;
+      transition: $transition-fast;
+    }
+  }
+}

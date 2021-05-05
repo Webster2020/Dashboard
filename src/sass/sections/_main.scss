@@ -6,20 +6,16 @@ main {
 
 .section-main {
   margin: 0 0 2px;
-  padding: 20px 10px;
   width: 100%;
   background-color: $section-background-color;
   text-align: center;
-}
-
-.section-main-margin {
-  padding: 20px 150px;
+  box-shadow: $b-shad-e-one;
 }
 
 .section-title {
   margin: 0 0 2px;
-  padding: 1px 15px;
   width: 100%;
   background-color: $section-background-color;
   text-align: left;
+  box-shadow: $b-shad-e-one;
 }

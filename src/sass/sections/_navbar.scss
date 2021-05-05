@@ -50,16 +50,3 @@ nav {
     text-decoration: none;
   }
 }
-
-.point-red {
-  &::after {
-    position: absolute;
-    content: "";
-    height: 11px;
-    width: 11px;
-    top: 22px;
-    left: 36px;
-    border-radius: 50%;
-    background-color: $brand-main-color;
-  }
-}
