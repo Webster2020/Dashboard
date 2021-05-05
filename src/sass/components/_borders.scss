@@ -45,3 +45,19 @@
 .bor-link {
   border: 2px solid peru;
 }
+
+.bor-list {
+  border: 3px solid darkgreen;
+}
+
+.bor-li {
+  border: 1px solid lightgreen;
+}
+
+.bor-logo {
+  border: 3px solid hotpink;
+}
+
+.bor-l-aside {
+  border-left: 3px solid $aside-background-color;
+}

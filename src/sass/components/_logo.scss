@@ -1,17 +1,11 @@
 .logo {
   display: inline-block;
   line-height: 0.8;
-  border: 3px solid hotpink;
-}
-
-.logo-hover {
-  &:hover {
-    color: $brand-main-color;
-  }
+  //border: 3px solid hotpink;
 }
 
 .logo-font {
   font-size: $aside-logo-font-size;
-  font-family: $logo-font;
+  font-family: $pacifico-font;//$logo-font;
   color: $main-font-color;
 }

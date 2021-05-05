@@ -9,10 +9,10 @@ aside {
 
 .row-aside {
   position: relative;
-  padding: 18px 0 13px 20px;
-  height: 60px;
+  //padding: 18px 0 13px 20px;
+  //height: 60px;
   width: 100%;
-  border-left: 3px solid $aside-background-color;
+  border-left: 4px solid $aside-background-color;
   color: $section-background-color;
 
   &::after {
@@ -20,14 +20,14 @@ aside {
     content: "";
     top: 0;
     left: 0;
-    height: 60px;
+    height: 70px;
     width: 100%;
     background-color: $section-background-color;
     opacity: 0;
   }
 
   &:hover {
-    border-left: 3px solid $brand-main-color;
+    border-left: 4px solid $brand-main-color;
 
     &::after {
       opacity: 0.1;   

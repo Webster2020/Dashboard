@@ -1,7 +1,14 @@
 .hov-scale {
   transition: $transition-fast;
+
   &:hover {
     transform: scale(1.2);
     transition: $transition-fast;
+  }
+}
+
+.hov-main-color {
+  &:hover {
+    color: $brand-main-color !important;
   }
 }
