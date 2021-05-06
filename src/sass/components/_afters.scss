@@ -1,5 +1,6 @@
 .point-green {
   position: relative !important;
+
   &::after {
     position: absolute;
     content: "";
@@ -14,6 +15,7 @@
 
 .point-red {
   position: relative !important;
+
   &::after {
     position: absolute;
     content: "";
@@ -28,6 +30,7 @@
 
 .point-brand {
   position: relative !important;
+
   &::after {
     position: absolute;
     content: "";
@@ -38,6 +41,7 @@
     border-radius: 50%;
     background-color: $brand-main-color;
   }
+
   &:hover {
     &::after {
       height: 13px;

@@ -21,3 +21,35 @@
     color: $brand-main-color !important;
   }
 }
+
+.hov-hide { //add show to element which will react on hover
+  opacity: 0;
+}
+
+.hov-fog { //add to element which will call hover
+  position: relative !important;
+  transition: $transition-fast;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: $transition-fast;
+  }
+
+  &:hover {
+    .hov-show { //add show to element which will react on hover
+      opacity: 0.9;
+      transition: $transition-fast;
+    }
+    &::after {
+      transition: $transition-fast;
+      background-color: $aside-background-color;
+      opacity: 0.1;   
+    }
+  }
+}

@@ -11,7 +11,7 @@
 }
 
 .hgh-full {
-  height: 100%;
+  height: 100% !important;
 }
 
 .hgh-half {
@@ -46,8 +46,16 @@
   height: 400px;
 }
 
+.hgh-500 {
+  height: 500px;
+}
+
+.hgh-750 {
+  height: 750px;
+}
+
 .wdh-full {
-  width: 100%;
+  width: 100% !important;
 }
 
 .wdh-half {
