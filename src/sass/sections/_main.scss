@@ -2,6 +2,7 @@ main {
   margin: $nav-height 0 0 $aside-width;
   height: calc(100% - $nav-height);
   width: calc(100% - $aside-width);
+  background-color: $main-background-color;
 }
 
 .section-main {

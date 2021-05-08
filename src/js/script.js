@@ -1,5 +1,33 @@
 'use strict';
 
+/* PAGES */
+
+{
+
+  const btnGeneral = document.querySelector('#general');
+  const btnDetails = document.querySelector('#details');
+
+  const pageGeneral = document.querySelector('.page-general');
+  const pageDetails = document.querySelector('.page-details');
+
+  btnGeneral.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (!pageGeneral.classList.contains('visible')) {
+      pageGeneral.classList.add('visible');
+      pageDetails.classList.remove('visible');
+    }
+  })
+
+  btnDetails.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (!pageDetails.classList.contains('visible')) {
+      pageDetails.classList.add('visible');
+      pageGeneral.classList.remove('visible');
+    }
+  })
+
+}
+
 /* OVERLAY */
 
 {
