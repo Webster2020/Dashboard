@@ -2,6 +2,7 @@
   transition: $transition-fast;
 
   &:hover {
+    cursor: pointer;
     transform: scale(1.2);
     transition: $transition-fast;
   }
@@ -11,6 +12,7 @@
   transition: $transition-fast;
 
   &:hover {
+    cursor: pointer;
     transform: scale(1.1);
     transition: $transition-fast;
   }
@@ -46,6 +48,7 @@
       opacity: 0.9;
       transition: $transition-fast;
     }
+
     &::after {
       transition: $transition-fast;
       background-color: $aside-background-color;

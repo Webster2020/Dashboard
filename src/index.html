@@ -37,7 +37,7 @@
           </div>
           <div class="col col-sm-3 col-md-3 col-lg-3 col-xl-3 col-cen bor-l">
             <div class="icon p-tb-25 p-lr-20">
-              <i class="far fa-bell i-big c-main hov-scale point-brand"></i>
+              <i id="overlayOpener" class="far fa-bell i-big c-main hov-scale point-brand"></i>
             </div> 
           </div>
         </div>
@@ -214,7 +214,7 @@
     <div class="page-general visible">
 
       <section class="container">
-          
+
         <div class="section-title p-tb-20 p-lr-20">
           <h2>GENERAL STATISTIC</h2>
         </div>
@@ -229,7 +229,7 @@
           </div>
         </div>
 
-        <div class="section-main p-tb-25 p-lr-100">
+        <div class="section-main p-tb-25 p-lr-200">
 
           <div class="row row-cen">
 
@@ -281,14 +281,14 @@
             <h3><b>Earnings chart</b></h3>
           </div>
 
-          <div class="row row-left m-tb-50">
-            <div class="img-wrapper">
-              <image class="img wdh-full hgh-500 img-cover" src="https://images.pexels.com/photos/2387877/pexels-photo-2387877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="diagram"></image>
+          <div class="row row-cen m-tb-50">
+            <div class="wdh-full">
+              <canvas id="myChart"></canvas>
             </div>
           </div>
 
         </div>
-
+        
       </section>
 
       <section class="container">
@@ -297,7 +297,7 @@
           <h2>LINKS</h2>
         </div>
 
-        <div class="section-main p-tb-50 p-lr-100">
+        <div class="section-main p-tb-50 p-lr-200">
 
           <div class="row row-cen p-tb-20 bor-b">
             <div class="btn btn-lg btn-main m-lr-10">+ add new</div>
@@ -397,17 +397,47 @@
               </div>
             </div>
           </div>
-          
+
         </div>
 
       </section>
 
     </div>
 
+    <div class="overlay" id="overlay">
+      <div class="modal" id="myModal">
+
+        <div class="row p-tb-10 p-lr-10">
+          <div class="col col-sm-6 col-md-6 col-lg-6 col-xl-6 col-left">
+            <h2>NOTIFICATION</h2>
+          </div>
+          <div class="col col-sm-6 col-md-6 col-lg-6 col-xl-6 col-right">
+            <div class="btn btn-md btn-close hov-scale-sm js--close-modal">x</div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row p-tb-10 p-lr-10">
+          <p>Etiam consequat nibh elit, at sagittis nunc dictum ut. Nunc libero nunc, iaculis dictum semper in, accumsan in leo. Aliquam dictum rhoncus purus rutrum feugiat. Aliquam lobortis non dolor ut laoreet. Phasellus placerat elementum est, quis rhoncus velit fermentum eu. Morbi interdum pretium eros laoreet tristique. Nunc suscipit eget dolor vitae gravida. Donec eget orci sit amet justo lobortis ultricies eget eget tellus. Nullam et diam ut velit mattis accumsan.
+
+            Mauris ac velit sapien. Pellentesque efficitur nunc a efficitur ultrices. Maecenas convallis consectetur lectus, vehicula congue ipsum blandit sed. Vivamus nec rhoncus orci. In id laoreet enim. Quisque porttitor, urna non vulputate pharetra, quam quam pulvinar arcu, ut ultrices arcu ligula sed ex. Maecenas euismod est nulla.</p>
+        </div>
+
+        <hr>
+
+        <div class="row row-cen p-tb-10 p-lr-10">
+          <div class="btn btn-big btn-main js--close-modal">Okay</div>
+        </div>
+
+      </div>
+    </div>
+
   </main>
 
   <!--<img src="icons/arrow-down-small.svg" alt="Kiwi standing on oval">-->
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
