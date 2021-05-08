@@ -5,6 +5,19 @@ main {
   background-color: $main-background-color;
 }
 
+@media(max-width: 1070px) {
+  main {
+    margin: $nav-height-dbl 0 0 $aside-width;
+  }
+}
+
+@media(max-width: 768px) {
+  main {
+    margin: $nav-height 0 0 70px;
+    width: calc(100% - 70px);
+  }
+}
+
 .section-main {
   margin: 0 0 3px;
   width: 100%;

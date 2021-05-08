@@ -4,7 +4,18 @@ aside {
   width: $aside-width;
   top: 0;
   left: 0;
+  z-index: 99999;
   background-color: $aside-background-color;
+}
+
+@media(max-width: 768px) {
+  aside {
+    width: $aside-width-mob;
+    left: calc(-100% + 70px);
+    &:hover {
+      left: 0;
+    }
+  }
 }
 
 .row-aside {

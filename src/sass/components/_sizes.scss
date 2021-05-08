@@ -1,5 +1,10 @@
 /* SIZES */
 
+.block-nav-sizer {
+  height: 80px;
+  width: 400px;
+}
+
 .block-sizer {
   height: 80px;
   width: 400px;
@@ -155,3 +160,23 @@
   width: 100%;
   max-width: 1500px;
 }
+
+/*
+@media(max-width: 767px) {
+  .block-sizer {
+
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+}
+*/
