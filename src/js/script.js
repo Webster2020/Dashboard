@@ -9,11 +9,13 @@
   const btnDetails = document.querySelector('#details');
   const btnLinks = document.querySelector('#links');
   const btnBanners = document.querySelector('#banners');
+  const btnPersonal = document.querySelector('#personal-data');
 
   const pageGeneral = document.querySelector('.page-general');
   const pageDetails = document.querySelector('.page-details');
   const pageLinks = document.querySelector('.page-links');
   const pageBanners = document.querySelector('.page-banners');
+  const pagePersonal = document.querySelector('.page-personal-data');
 
   if (pageGeneral) {
     btnGeneral.addEventListener('click', function(e) {
@@ -68,6 +70,20 @@
         }
       }
       pageBanners.classList.add('visible');
+    });
+  }
+
+  if (btnPersonal) {
+    btnPersonal.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('click details');
+      for (let page of pagesAll) {
+        console.log(page);
+        if (page.classList.contains('visible')) {
+          page.classList.remove('visible');
+        }
+      }
+      pagePersonal.classList.add('visible');
     });
   }
 
@@ -175,3 +191,5 @@ var chart = new Chart(ctx, {
     }]
   },
 });
+
+console.log(chart); 

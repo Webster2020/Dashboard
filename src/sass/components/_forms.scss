@@ -1,1 +1,54 @@
-//dsfsdfsdf
+form {
+  display: flex;
+  flex-flow: column;
+}
+
+form > * {
+  padding: 5px;
+  text-align: center;
+}
+
+input {
+  background: inherit;
+  color: black;
+  padding: 5px;
+  margin: 5px 0;
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  transition: .5s all;
+}
+
+div > input {
+  max-width: 130px;
+  float: left;
+}
+
+div > input:first-of-type {
+  margin-right: 30px;
+}
+
+input[type="submit"] {
+  height: 60px;
+  border: none;
+  background: #00C853;
+  font-size: 2em;
+  text-shadow: 1px 1px 30px #666;
+}
+
+input:optional {
+  border-color: rgba(85, 238, 112, 0.5);
+  outline-color: rgb(85, 238, 112);
+}
+
+input:required {
+  border-color: rgba(255, 99, 71, 0.6);
+  outline-color: rgb(255, 99, 71);
+}
+
+/* selectors 
+input[type="text"],
+input[type="email"] {
+  ...
+}
+*/

@@ -944,6 +944,261 @@
 
     </section>
 
+    <section class="container">
+      
+      <div class="section-title p-tb-20 p-lr-20">
+        <h2>FORMS</h2>
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 1</strong></h4>
+
+        <div class="row row-cen">    
+
+          <form action="" method="POST">
+            <div class="field">
+              <label>
+                <h4 class="p-tb-10 p-lr-10"><strong>Name</strong></h4>
+              </label>
+              <input type="text" name="user-name">
+            </div>
+            <div class="field">
+              <label>Wiadomość</label>
+              <textarea name="message"></textarea>
+            </div>
+            <button type="submit">Wyślij</button>
+
+            <br>
+
+            <input type="text" name="user-name" placeholder="text">
+            <input type="password" name="user-name" placeholder="passsword">
+            <input type="email" name="user-name" placeholder="email">
+            <input type="number" name="user-name" placeholder="number">
+            <h3>min,max,step for range</h3>
+            <input type="range" name="user-name" placeholder="range">
+            <textarea name="message"></textarea>
+            <textarea name="message">Moja wiadomość</textarea>
+            <input type="checkbox" name="zgoda">Lalalala
+            <input type="radio" name="kolor" value="red">raz
+            <input type="radio" name="kolor" value="green">dwa
+            <input type="radio" name="kolor" value="blue">trzy
+            <select name="kolor">
+              <option value="red">Czerwony</option>
+              <option value="green">Zielony</option>
+              <option value="blue">Niebieski</option>
+            </select>
+            <select name="car">
+              <optgroup label="Szwedzkie">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </optgroup>
+              <optgroup label="Niemieckie">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </optgroup>
+            </select>
+
+          </form>
+
+        </div>
+
+        <br>
+
+        <div class="row row-cen">
+
+          <form method="post" enctype="multipart/form-data">
+            <div>
+              <label>Wybierz plik do wgrania</label>
+              <input type="file" name="file">
+              <input type="file" accept=".png, .jpeg">
+              <input type="file" accept="image/png, image/jpeg">
+            </div>
+            <div>
+              <button>Wyślij</button>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="row row-cen">
+
+          <button type="submit">Przycisk</button>
+
+          <input type="submit" value="Przycisk">
+
+          <label>
+            <input type="checkbox" name="zgoda">
+            Wyrażam zgodę na przetwarzanie danych osobowych...
+          </label>
+
+          <input type="checkbox" name="zgoda" id="poleZgody">
+          <label for="poleZgody">Wyrażam zgodę na przetwarzanie danych...</label>
+
+        </div>
+
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 2</strong></h4>
+
+        <div class="row row-cen">
+          <form action="" method="POST">
+            <input type="text" placeholder="Your living address">
+	          <input type="email" placeholder="Your email address">
+          </form>
+        </div>
+      
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 3 (fieldset)</strong></h4>
+
+        <div class="row row-cen">
+          <form action="" method="POST">
+            <input type="number" placeholder="Quantity">
+            <input type="text" placeholder="Delivery address">
+            <input type="text" placeholder="Recipient's name">
+            <fieldset>
+                <legend>Choose your shipping option</legend>
+                <input type="radio" name="delivery_agency" value="UPS">UPS
+                <input type="radio" name="delivery_agency" value="USPS">USPS
+                <input type="radio" name="delivery_agency" value="FedE" checked>FedEx
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+        
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 4 (option)</strong></h4>
+
+        <div class="row row-cen">
+          <form action="" method="POST">
+            <select>
+              <optgroup label="x1">
+                <option value="a">a</option>
+                <option value="b">b</option>
+              </optgroup>
+              <optgroup label="x2">
+                <option value="c">c</option>
+                <option value="d">d</option>
+              </optgroup>
+            </select> 
+          </form>
+        </div>
+
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+        
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 5 (label)</strong></h4>
+
+        <div class="row row-cen">
+          <form action="" method="POST">   
+            <h3>How are you today?</h3>
+            <span>
+              <input type="radio" id="fun" name="how" value="fine">
+              <label for="fun">I'm fine.</label>
+            </span>
+            <span>
+              <input type="radio" id="not_fun" name="how" value="miserable">
+              <label for="not_fun">Not well.</label>
+            </span>     
+          </form>
+        </div>
+
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+        
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 6 (datalist)</strong></h4>
+
+        <div class="row row-cen">
+          <form action="" method="POST">  
+            <h3>What's your favourite car brand?</h3>
+            <input type="text" list="car_brands">
+            <datalist id="car_brands">
+                <option value="x1">opel</option>
+                <option value="x2">ford</option>
+                <option value="x3">kia</option>
+            </datalist>
+            <input type="submit">
+          </form>
+        </div>
+
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+        
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 7 (attributes)</strong></h4>
+
+        <div class="row row-cen">
+          <form action="" method="POST">  
+            <h3>Pet preferences survey</h3>
+            <p>What's your name?</p>
+            <input type="required" name="firstname" required>
+            <p>Are you male or female?</p>
+            <span><input type="radio" name="gender" value="male"/>Male</span>
+            <span><input type="radio" name="gender" value="female"/>Female</span>
+            <p>What's your favourite pet animal?</p>
+            <span>
+              <input type="radio" name="pet" value="dog" hidden="on">A dog
+              <input type="radio" name="pet" value="cat" disabled="on">A cat
+              <input type="radio" name="pet" value="tortoise">A tortoise
+              <input type="radio" name="pet" value="rabbit">A rabbit
+              <input type="radio" name="pet" value="snake">A snake
+            </span>
+            <input type="submit" value="Say hello!">
+          </form>
+        </div>
+
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+        
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 8 (min,max,step)</strong></h4>
+
+        <div class="row row-cen">
+          <form action="" method="POST">  
+            <h3>Looking for a job?</h3>
+            <p>What position do you want to apply for?</p>
+            <input type="text" placeholder="Web Designer, etc.">
+            <p>How many years of experience do you have?</p>
+            <input type="number" min=0 step=0.5>
+            <p>How much do you want to earn?</p>
+            <input type="number" min=1>
+            <br>
+            <input type="submit" value="Search for a job">
+          </form>
+        </div>
+
+      </div>
+
+      <div class="section-main p-tb-20 p-lr-20">
+        
+        <h4 class="p-tb-10 p-lr-10 bor-b m-tb-10"><strong>FORM 9 (required, optional)</strong></h4>
+
+        <div class="row row-cen">
+          <form action="" method="POST">  
+            <h1>Sign up today</h1>
+            <div>
+              <input type="text" placeholder="First name"/>
+              <input type="text" placeholder="Last name"/>
+            </div>
+            <input type="email" placeholder="Email address*" required />
+            <input type="password" placeholder="Your password*" required/>
+            <input type="submit" value="Let's do it!"/>
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
   <nav>
