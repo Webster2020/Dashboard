@@ -12,6 +12,7 @@ aside {
   aside {
     width: $aside-width-mob;
     left: calc(-100% + 70px);
+
     &:hover {
       left: 0;
     }

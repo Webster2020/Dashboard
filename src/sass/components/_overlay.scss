@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 999999;
 
   width: 100%;
   height: 100%;
@@ -26,15 +26,17 @@
 }
 
 .modal {
-  max-width: 600px;
+  max-width: 450px;
   margin: auto;
   background-color: #ffffff;
   position: relative;
   display: none;
+
   .btn-close {
     position: static;
     padding: 5px 10px;
   }
+
   .btn-close-abs {
     position: absolute;
     top: 0;

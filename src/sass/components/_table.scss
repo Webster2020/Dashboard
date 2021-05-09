@@ -12,7 +12,7 @@ table, th, td {
 
 tr:not(:first-of-type) {
   &:hover {
-    background-color:#f5f5f5;
+    background-color: #f5f5f5;
   }
 }
 
@@ -20,5 +20,3 @@ td {
   color: $dark-color;
   padding: 25px 10px;
 }
-
-
