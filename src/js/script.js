@@ -10,12 +10,14 @@
   const btnLinks = document.querySelector('#links');
   const btnBanners = document.querySelector('#banners');
   const btnPersonal = document.querySelector('#personal-data');
+  const btnPayout = document.querySelector('#payout');
 
   const pageGeneral = document.querySelector('.page-general');
   const pageDetails = document.querySelector('.page-details');
   const pageLinks = document.querySelector('.page-links');
   const pageBanners = document.querySelector('.page-banners');
   const pagePersonal = document.querySelector('.page-personal-data');
+  const pagePayout = document.querySelector('.page-payout');
 
   if (pageGeneral) {
     btnGeneral.addEventListener('click', function(e) {
@@ -84,6 +86,20 @@
         }
       }
       pagePersonal.classList.add('visible');
+    });
+  }
+
+  if (btnPayout) {
+    btnPayout.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('click details');
+      for (let page of pagesAll) {
+        console.log(page);
+        if (page.classList.contains('visible')) {
+          page.classList.remove('visible');
+        }
+      }
+      pagePayout.classList.add('visible');
     });
   }
 

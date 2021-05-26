@@ -1,0 +1,11 @@
+.page-payout {
+  display: none;
+  padding: 10px 5px;
+  height: 100%;
+  width: 100%;
+  background-color: $main-background-color;
+}
+
+.visible {
+  display: block !important;
+}

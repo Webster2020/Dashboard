@@ -1,54 +1,377 @@
-form {
-  display: flex;
-  flex-flow: column;
+input, textarea, select {
+  border-radius: 5px;
+  outline: none;
+  color: $color-main-inv;
+  opacity: 0.8;
+  &:focus {
+    opacity: 1;
+    border: 2px solid $brand-main-color;
+    &:hover {
+      opacity: 1;
+    }   
+    &::placeholder {
+      opacity: 0.3;
+    }
+  }
+  &:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+  }
 }
 
-form > * {
-  padding: 5px;
-  text-align: center;
-}
-
-input {
-  background: inherit;
-  color: black;
-  padding: 5px;
-  margin: 5px 0;
-  width: 100%;
+.inp-block {
   display: block;
-  border: 1px solid #ccc;
-  transition: .5s all;
 }
 
-div > input {
-  max-width: 130px;
-  float: left;
+.inp-sm {
+  font-size: 12px;
 }
 
-div > input:first-of-type {
-  margin-right: 30px;
+.inp-md {
+  font-size: 18px;
 }
 
-input[type="submit"] {
-  height: 60px;
-  border: none;
-  background: #00C853;
-  font-size: 2em;
-  text-shadow: 1px 1px 30px #666;
+.inp-big {
+  font-size: 22px;
 }
 
-input:optional {
-  border-color: rgba(85, 238, 112, 0.5);
-  outline-color: rgb(85, 238, 112);
+.inp-lg {
+  font-size: 28px;
 }
 
-input:required {
-  border-color: rgba(255, 99, 71, 0.6);
-  outline-color: rgb(255, 99, 71);
+.inp-xl {
+  font-size: 35px;
 }
 
-/* selectors 
-input[type="text"],
-input[type="email"] {
-  ...
+/* FORMS CLASSIC */
+
+.forms-classic {
+  padding: 10px;
+  width: fit-content;
+  //border: 2px solid $color-main-md;
+  //border-radius: 5px;
+  color: $color-main-md;
+  display: flex;
+  flex-direction: column;
+  .lbl-classic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
 }
-*/
+
+.lbl-title-classic {
+  width: 170px;
+  margin-right: 20px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.inp-classic {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid $main-font-color;  
+  color: $main-font-color;
+  &:focus {
+    &:hover {
+      background: $color-main;
+    }
+  }
+  &:hover {
+    background: $color-hover-classic;
+    opacity: 0.2;
+  }
+}
+
+.lbl-title-row-classic {
+  width: 120px;
+  margin-right: 20px;
+  text-align: end;
+  white-space: nowrap;
+}
+
+.inp-rng-classic {
+  margin: 3px 0;
+  width: 250px;
+  border: 2px solid $color-main-inv;
+  color: $color-main-md;
+  &:focus {
+    &:hover {
+      background: $color-main;
+    }
+  }
+  &:hover {
+    background: $color-hover-classic;
+  }
+}
+
+.inp-rng2-classic {
+  margin: 3px 10px 0 0;
+  width: 200px;
+  border: 2px solid $color-main-inv;
+  color: $color-main-md;
+  &:focus {
+    &:hover {
+      background: $color-main;
+    }
+  }
+  &:hover {
+    background: $color-hover-classic;
+  }
+}
+
+.val-rng2-classic {
+  margin-left: 10px;
+  width: 30px;
+  text-align: end;
+  white-space: nowrap;
+}
+
+.inp-rng-classic[type="checkbox"] {
+  width: 15px;
+  margin: 0 235px 0 0;
+}
+
+.inp-rng-classic[type="radio"] {
+  width: 15px;
+  margin: 0 235px 0 0;
+}
+
+@media (max-width: 1200px) {
+  
+  .forms-classic {
+    width: 100%;
+    .lbl-classic {
+      flex-direction: column;
+      margin: 10px 0;
+    }
+    .lbl-row-classic {
+      flex-direction: row;
+      .lbl-title-row-classic {
+        width: 70px;
+        text-align: start;
+      }
+
+      .inp-rng-classic {
+        width: 310px;
+      }
+
+      .inp-rng2-classic {
+        margin: 5px 0 0 0;
+        width: 270px;
+      }
+    }
+  }
+
+  .lbl-title-classic {
+    width: 100%;
+    text-align: center;
+  }
+
+  .inp-classic {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .inp-rng-classic[type="checkbox"] {
+    width: 15px !important;
+    margin: 0 295px 0 0;
+  }
+  
+  .inp-rng-classic[type="radio"] {
+    width: 15px !important;
+    margin: 0 295px 0 0;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+/* FORMS INHERIT */
+
+.inp-inherit {
+  padding: 5px;
+  background: inherit;
+  border: 3px solid $color-main-md;
+  color: $color-main-md;
+  &:focus {
+    border: 3px solid $color-d-green;
+    &:hover {
+      background: inherit;
+      border: 3px solid $color-d-green;
+    }
+  }
+  &:hover {
+    border: 3px solid $color-l-green;
+  }
+}
+
+
+
+/* ------------------------------------------------*/
+
+.custom-checkbox {
+  input[type="checkbox"] {
+    position: absolute;
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+
+    + .icon {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid yellow;
+    }
+
+    &:checked + .icon {
+      background-color: orange;
+    }
+  }
+}
+
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 5px 30px 5px 10px;
+  font-size: 14px;
+  display: block;
+  border-radius: 0;
+  background-image: url(https://image.flaticon.com/icons/png/128/118/118738.png);
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+
+/* INPUT RANGE */
+
+.custom-range {
+  // hide default styles
+  input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 10%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  input[type=range]::-ms-track {
+    width: 10%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+  // new styles for tick
+
+  input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 10%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 10%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+  }
+  input[type=range]::-moz-range-track {
+    width: 10%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 10%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #3071a9;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #367ebd;
+  }
+
+}
+
+/* ----------- */
