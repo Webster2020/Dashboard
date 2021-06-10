@@ -3,16 +3,20 @@ input, textarea, select {
   outline: none;
   color: $color-main-inv;
   opacity: 0.8;
+
   &:focus {
     opacity: 1;
     border: 2px solid $brand-main-color;
+
     &:hover {
       opacity: 1;
     }   
+
     &::placeholder {
       opacity: 0.3;
     }
   }
+
   &:hover {
     opacity: 0.9;
     transition: 0.5s;
@@ -53,6 +57,7 @@ input, textarea, select {
   color: $color-main-md;
   display: flex;
   flex-direction: column;
+
   .lbl-classic {
     display: flex;
     flex-direction: row;
@@ -72,13 +77,15 @@ input, textarea, select {
 .inp-classic {
   padding: 10px;
   width: 300px;
-  border: 2px solid $main-font-color;  
+  border: 2px solid $main-font-color;
   color: $main-font-color;
+
   &:focus {
     &:hover {
       background: $color-main;
     }
   }
+
   &:hover {
     background: $color-hover-classic;
     opacity: 0.2;
@@ -97,11 +104,13 @@ input, textarea, select {
   width: 250px;
   border: 2px solid $color-main-inv;
   color: $color-main-md;
+
   &:focus {
     &:hover {
       background: $color-main;
     }
   }
+
   &:hover {
     background: $color-hover-classic;
   }
@@ -112,11 +121,13 @@ input, textarea, select {
   width: 200px;
   border: 2px solid $color-main-inv;
   color: $color-main-md;
+
   &:focus {
     &:hover {
       background: $color-main;
     }
   }
+
   &:hover {
     background: $color-hover-classic;
   }
@@ -140,15 +151,17 @@ input, textarea, select {
 }
 
 @media (max-width: 1200px) {
-  
   .forms-classic {
     width: 100%;
+
     .lbl-classic {
       flex-direction: column;
       margin: 10px 0;
     }
+
     .lbl-row-classic {
       flex-direction: row;
+
       .lbl-title-row-classic {
         width: 70px;
         text-align: start;
@@ -186,7 +199,7 @@ input, textarea, select {
   }
   
 }
-
+/*
 @media (max-width: 992px) {
   
 }
@@ -194,7 +207,7 @@ input, textarea, select {
 @media (max-width: 768px) {
   
 }
-
+*/
 /* FORMS INHERIT */
 
 .inp-inherit {
@@ -202,19 +215,20 @@ input, textarea, select {
   background: inherit;
   border: 3px solid $color-main-md;
   color: $color-main-md;
+
   &:focus {
     border: 3px solid $color-d-green;
+
     &:hover {
       background: inherit;
       border: 3px solid $color-d-green;
     }
   }
+
   &:hover {
     border: 3px solid $color-l-green;
   }
 }
-
-
 
 /* ------------------------------------------------*/
 
@@ -255,7 +269,6 @@ input, textarea, select {
   background-position: right 5px center;
 }
 
-
 /* INPUT RANGE */
 
 .custom-range {
@@ -279,7 +292,7 @@ input, textarea, select {
     cursor: pointer;
 
     /* Hides the slider so custom styles can be added */
-    background: transparent; 
+    background: transparent;
     border-color: transparent;
     color: transparent;
   }
@@ -291,9 +304,11 @@ input, textarea, select {
     margin: 18px 0;
     width: 10%;
   }
+
   input[type=range]:focus {
     outline: none;
   }
+
   input[type=range]::-webkit-slider-runnable-track {
     width: 10%;
     height: 8.4px;
@@ -303,6 +318,7 @@ input, textarea, select {
     border-radius: 1.3px;
     border: 0.2px solid #010101;
   }
+
   input[type=range]::-webkit-slider-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
@@ -314,9 +330,11 @@ input, textarea, select {
     -webkit-appearance: none;
     margin-top: -5px;
   }
+
   input[type=range]:focus::-webkit-slider-runnable-track {
     background: #367ebd;
   }
+
   input[type=range]::-moz-range-track {
     width: 10%;
     height: 8.4px;
@@ -326,6 +344,7 @@ input, textarea, select {
     border-radius: 1.3px;
     border: 0.2px solid #010101;
   }
+
   input[type=range]::-moz-range-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
@@ -335,6 +354,7 @@ input, textarea, select {
     background: #ffffff;
     cursor: pointer;
   }
+
   input[type=range]::-ms-track {
     width: 10%;
     height: 8.4px;
@@ -344,18 +364,21 @@ input, textarea, select {
     border-width: 16px 0;
     color: transparent;
   }
+
   input[type=range]::-ms-fill-lower {
     background: #2a6495;
     border: 0.2px solid #010101;
     border-radius: 2.6px;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   }
+
   input[type=range]::-ms-fill-upper {
     background: #3071a9;
     border: 0.2px solid #010101;
     border-radius: 2.6px;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   }
+
   input[type=range]::-ms-thumb {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     border: 1px solid #000000;
@@ -365,9 +388,11 @@ input, textarea, select {
     background: #ffffff;
     cursor: pointer;
   }
+
   input[type=range]:focus::-ms-fill-lower {
     background: #3071a9;
   }
+
   input[type=range]:focus::-ms-fill-upper {
     background: #367ebd;
   }
